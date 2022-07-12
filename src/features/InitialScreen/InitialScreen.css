@@ -19,8 +19,16 @@
 .initial-screen h1 {
     font-size: 5em;
     margin: 0;
+    line-height: 1em;
 
     background: linear-gradient(15deg, #3fd38e, rgb(147, 70, 224));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.initial-screen h1:hover {
+    background: linear-gradient(15deg, rgb(179, 68, 207), rgb(97, 164, 42));
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -29,13 +37,4 @@
 .initial-screen h2 {
     font-size: 2em;
     margin: 0;
-}
-
-.inicial-screen .buttons {
-    margin: 0;
-    
-    width: 100%;
-    height: 50%;
-    display: flex;
-    justify-content: center;
 }

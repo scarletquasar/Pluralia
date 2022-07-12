@@ -7,7 +7,7 @@ const InitialScreen = () => {
 
     const { 
         initialScreenText, 
-        initialScreenHelperText ,
+        initialScreenHelperText,
         initialScreenButtonText
     } = langs[lang];
 
@@ -15,9 +15,7 @@ const InitialScreen = () => {
         <main className="initial-screen">
             <h1>{initialScreenText}</h1>
             <h2>{initialScreenHelperText}</h2>
-            <div className="buttons">
-                <button>{initialScreenButtonText}</button>
-            </div>
+            <button>{initialScreenButtonText}</button>
         </main>
     )
 }

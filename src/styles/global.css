@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
+:root {
+    --light: #ccc;
+}
+
 body, html {
     margin: 0;
     height: 100%;
@@ -21,4 +25,25 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+button {
+    transition: 0.3s;
+    cursor: pointer;
+    padding: 1em;
+    font-size: 1em;
+    font-family: "Poppins", "Verdana";
+    color: var(--light);
+    border: 0.2em solid var(--light);
+    border-radius: 1em;
+    background: none;
+}
+
+button:hover {
+    transform: translateY(-5%);
+    filter: drop-shadow(0 0 0.40rem rgb(255, 255, 255));
+}
+
+button:active {
+    transform: translateY(0);
 }
